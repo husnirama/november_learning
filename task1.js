@@ -31,3 +31,5 @@ for (const char of word){
     reversed = char + reversed;
 }
 console.log(reversed);
+const reversedString = (str) => str.split(" ").reverse().join("");
+console.log(reverseString(word));
