@@ -142,7 +142,7 @@ console.log(convertDaystoYears(366));
 
 const diffDates = (dateStart: Date, dateEnd: Date) : number =>{
     const msPerDays: number = 1000 * 60 * 60 * 24
-    const diffInMs = Math.abs(dateEnd - dateStart);
+    const diffInMs = Math.abs(dateEnd.getTime() - dateStart.getTime());
     return diffInMs / msPerDays;
 }
 const date1 = new Date('2022-01-20')
